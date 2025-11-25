@@ -860,7 +860,7 @@ header {
     
 }
 .wrapper #main .main__copy p {
-    font-size: 2.67em;
+    font-size: 1.67em;
     letter-spacing: 0.5em;
     margin: 0;
     margin-left: 2%; /* ← 好きな値に調整 */
@@ -1225,7 +1225,7 @@ footer {
 /* text */
 /* ------------------------------------ */
 #main .main__copy .site-title {
-  font-size: 120px !important;
+  font-size: 50px !important;
   text-align: center;
   font-weight: 600;
   color: #110f74;  
