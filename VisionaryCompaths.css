@@ -500,27 +500,25 @@ header {
     left: 0;
     width: 100%;
     z-index: 999;
-
-    background: rgba(255,255,255,0.6); /* うっすら白帯 */
+    background: rgba(255,255,255,0.6);
     backdrop-filter: blur(4px);
-
     display: flex;
-    align-items: center;          /* ロゴとメニューの縦位置を中央揃え */
-    justify-content: space-between; /* 左ロゴ / 右メニューを左右に振り分け */
-    padding: 16px 40px;           /* 好きに微調整 */
+    align-items: center;          
+    justify-content: space-between; 
+    padding: 16px 40px;           
     box-sizing: border-box;
 }
 
-/* 左上ロゴ（クラス名 typo注意：heaDer__logo では？） */
+/* 左上ロゴ */
 .heaer__logo {
-      position: relative;     /* ← 重要 */
-  display: inline-block;  /* ← クリック範囲を正常化 */
+    position: relative;    
+    display: inline-block; 
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     color: rgb(39, 39, 38);
     text-decoration: none;
-    margin: 0;           /* h1/h2 のデフォルト余白を消す */
-    z-index: 10;            /* ← これでメニューより前面にする */
+    margin: 0;           
+    z-index: 10;         
 }
 
 .heaer__logo a.logo__img {
@@ -542,11 +540,10 @@ header {
     height: 60px;
     width: 100%;
     background: transparent;
-    z-index: 1;             /* ロゴより下にする */
+    z-index: 1; 
 }
 
 .header__menu ul {
-    /*width: 50vw; min-width: 600px;*/
     padding: 15px;
     position: absolute;
     top: 0;
@@ -560,15 +557,12 @@ header {
     display: block;
     padding: 5px 0;
     margin: 0 15px;
-    /* color: rgb(161, 9, 103); */
     color: #1A2A44;
     text-decoration: none;
-    /* font-weight: bold; */
     text-shadow: #0c0c0c 0 0 3px;
     font-size: 17px;
     font-weight: 700;
-    /* 外側に広がらないタイプのシャドウへ修正 */
-    text-shadow: none;    /* ← にじみの原因をカット */
+    text-shadow: none; 
 }
 .header__menu ul .menu__list a:after {
     content: "";
@@ -636,9 +630,6 @@ header {
     right: 0;
     z-index: 9999;
     width: 100%;
-    /* text-align: right; */
-    /* min-width: 220px; */
-    /* text-align: center;*/
 }
 .hamburger-menu {
     position: absolute;
@@ -786,15 +777,12 @@ header {
     text-align: center;
     width: 180px;
     height: 180px;
-    /* border-radius: 118px; */
-    /* background-color: #b4d305; */
     margin: 40px auto 0;
     vertical-align: middle;
     color: rgb(51, 50, 50);
     background-image: linear-gradient(0deg, #b8751e 0%, #ffce08 37%, #fefeb2 47%, #fafad6 50%, #fefeb2 53%, #e1ce08 63%, #b8751e 100%);
     background-clip: text;
     -webkit-background-clip: text;
-    /* color: transparent; */
 }
 
 #title h2 {
@@ -839,13 +827,8 @@ header {
     right: 0;
     text-align: center;
     color: rgb(51, 50, 50);
-    /* font-family: "Cormorant Garamond", serif; */
     font-weight: 600;
     height: 100vh;
-    /* font-style: italic; */
-    /* font-size: 28px; */
-    /* letter-spacing: -2px; */
-    /* font-weight: 100; */
     background-image: linear-gradient(0deg, #2483A0 ,#3CA4B3);
     background-clip: text;
     -webkit-background-clip: text;
@@ -855,15 +838,15 @@ header {
 .wrapper #main .main__copy h1 {
     font-size: 8em;
     margin: 10px 50px 10px 50px;
-    margin-left: 8%; /* ← 好きな値に調整 */
-    margin-top: 20vh;  /* ← これも間延びの原因 */
+    margin-left: 8%; 
+    margin-top: 20vh; 
     
 }
 .wrapper #main .main__copy p {
-    font-size: 1.67em;
+    font-size: 0.67em;
     letter-spacing: 0.5em;
     margin: 0;
-    margin-left: 2%; /* ← 好きな値に調整 */
+    margin-left: 2%; 
 }
 
 @media only screen and (max-width: 767px) {
@@ -879,7 +862,6 @@ header {
 }
 
 /* SERVICES */
-
 
 /* CONTACT */
 
@@ -939,9 +921,7 @@ footer {
 .about__detail {
     margin:4vw;
     background-color: rgba(255, 255, 255, 0.8);    
-    /* background-color: rgba(197, 254, 42, 0.8); */
     vertical-align: middle;
-    /* background-image: linear-gradient(0deg, #f7f78b 0%, #f8ce24 47%,  #f8e323 72%, #f7f78b 100%); */
     border-color: #a37e2d;
     border-width: 2px;
 }
@@ -960,9 +940,7 @@ footer {
 .privacy-detail {
     margin:4vw;
     background-color: rgba(255, 255, 255, 0.8);    
-    /* background-color: rgba(197, 254, 42, 0.8); */
     vertical-align: middle;
-    /* background-image: linear-gradient(0deg, #f7f78b 0%, #f8ce24 47%,  #f8e323 72%, #f7f78b 100%); */
     border-color: #a37e2d;
     border-width: 2px;
 }
@@ -987,7 +965,6 @@ footer {
     width: 100%;
     min-width: auto;
     max-width: none;
-    /* background-color: rgba(215, 254, 42, 0.8); */
     vertical-align: middle;
     border-color: #a37e2d;
     border-width: 2px;
@@ -1029,20 +1006,6 @@ footer {
     background-color: #fff;
     padding: 30px; 
 }
-/* #news:before{
-    content: " ";
-    position: absolute;
-    display: block;
-    width: 240px;
-    height: 240px;
-    background-color: #b4d305;
-    top: -90px;
-    left: -90px;
-    border-radius: 120px;
-    z-index: -1;
-    background-image: linear-gradient(0deg, #f7f78b 0%, #f8ce24 47%,  #f8e323 72%, #f7f78b 100%);
-} */
-
 #news .news__lineup{
     display: inline-block;
     vertical-align: top;
@@ -1178,9 +1141,8 @@ footer {
 }
 .service__content ul .content__detail .detail__img img{
     width: calc(100% - 30px);
-    /* padding-left: 30px; */
     margin-left: 30px;
-    border: 3px solid #d0d0d0;  /* 薄いグレー（目立ちすぎない） */
+    border: 3px solid #d0d0d0;
 }
 
 
@@ -1229,7 +1191,7 @@ footer {
   text-align: center;
   font-weight: 600;
   color: #110f74;  
-  display: inline-block;    /* ← 1行として扱わせる */
+  display: inline-block; 
   letter-spacing: 0.05em;
 }
 /* 2行目だけ少し右に寄せる */
@@ -1253,12 +1215,12 @@ footer {
  }
 
  .about-text { 
-  font-size: 18px;        /* 少し大きく */
-  line-height: 1.8;       /* 行間を広げて読みやすく */
-  letter-spacing: 0.03em; /* わずかに字間を調整 */
+  font-size: 18px;    
+  line-height: 1.8;   
+  letter-spacing: 0.03em; 
   color: #0b0b0b;
-  font-weight: 600;       /* 太さ：ノーマルでOK */
-  max-width: 900px;       /* 横に伸びすぎるのを防ぐ */
+  font-weight: 600;    
+  max-width: 900px;    
   margin-top: 10px;
 }
 
@@ -1285,7 +1247,7 @@ footer {
 .about__txt .list-block {
     font-weight: 700; 
     display: inline-block; 
-    text-align: left;      /* 左寄せ（3行の頭が揃う） */
+    text-align: left; 
 }
 
 /* ------------------------------------ */
