@@ -1497,8 +1497,8 @@ footer {
   }
 
   .arrow-line {
-      width: 14px !important;
-      left: -6px !important;
+      width: 25px !important;
+      left: -15px !important;
   }
 
   .arrow-line::after {
