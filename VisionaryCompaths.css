@@ -52,7 +52,7 @@ li {
     width: 85%;
     max-width: 1260px;
     margin: 0 auto;
-    padding: 120px 0;
+    padding: 130px 0;
 }
 
 a{
@@ -403,11 +403,7 @@ a.totop:before {
     min-width: 150px;
 }
 
-@media only screen and (max-width: 767px) {
-.wrapper--w {
-    width: 90%;
-    padding: 90px 0;
-}
+
 
 .content__chart ul li p.chart__ttl{
     width: 120px;
@@ -450,18 +446,7 @@ a.totop span {
     transition: 0.3s;
 }
 
-@media only screen and (max-width: 767px) {
-.main_bg{
-    position: fixed;
-    background-image: url(img/main_bg4.png);
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
-    z-index: -999;
-    transition: 0.3s;
-}
-}
+
 
 .main_bg_sub{
     position: fixed;
@@ -474,18 +459,7 @@ a.totop span {
     transition: 0.3s;
 }
 
-@media only screen and (max-width: 767px) {
-.main_bg_sub{
-    position: fixed;
-    background-image: url(img/main_bg4.png);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
-    z-index: -999;
-    transition: 0.3s;
-}
-}
+
 a {
     margin:0;
     padding:0;
@@ -510,7 +484,7 @@ header {
 }
 
 /* 左上ロゴ */
-.heaer__logo {
+.header__logo {
     position: relative;    
     display: inline-block; 
     font-weight: 700;
@@ -521,14 +495,14 @@ header {
     z-index: 10;         
 }
 
-.heaer__logo a.logo__img {
+.header__logo a.logo__img {
     display: block;
     position: absolute;
     width: 110px;
     top: 25px;
     left: 15px;
 }
-.heaer__logo a.logo__img img {
+.header__logo a.logo__img img {
     width: 100%;
 }
 
@@ -752,24 +726,6 @@ header {
     }
 }
 
-@media only screen and (max-width: 767px) {
-.heaer__logo {
-    position: relative;
-    width: 34vw;
-    height: 34vw;
-    max-width: 130px;
-    max-height: 130px;
-    z-index: 9999;
-}
-.heaer__logo a.logo__img {
-    display: block;
-    position: absolute;
-    width: 24vw;    
-    max-width: 100px;
-    top: 33px;
-    left: 10px;
-}
-}
 
 /* title */
 #title {
@@ -836,10 +792,10 @@ header {
 }
 
 .wrapper #main .main__copy h1 {
-    font-size: 8em;
+    font-size: 4em;
     margin: 10px 50px 10px 50px;
     margin-left: 8%; 
-    margin-top: 20vh; 
+    margin-top: 28vh; 
     
 }
 .wrapper #main .main__copy p {
@@ -849,17 +805,7 @@ header {
     margin-left: 2%; 
 }
 
-@media only screen and (max-width: 767px) {
-.wrapper #main .main__copy h1 {
-    font-size: 10vw;
-    margin: 0;
-}
-.wrapper #main .main__copy p {
-    font-size: 4.1vw;
-    letter-spacing: 0.2em;
-    margin: 0;
-}
-}
+
 
 /* SERVICES */
 
@@ -877,9 +823,6 @@ footer {
 }
 
 
-@media only screen and (max-width: 767px) {
-
-}
 
 @media only screen and (max-width: 320px) {
 }
@@ -983,20 +926,7 @@ footer {
 }
 }
 
-@media only screen and (max-width: 767px) {
-.about__detail p {
-    font-size: 4vw;
-    font-weight: bold;
-    line-height: 2.3;
-    padding: 8vw;
-    margin: -2% 0;
-}
-.about__copy p {
-    font-size: 11vw;
-    font-weight: bold;
-    margin-bottom: 1em;
-}
-}
+
 
 /* ------------------------------------ */
 /* NEWS */
@@ -1073,43 +1003,6 @@ footer {
 #news .news__facebook #facebook{
     width: 100%;
 }
-@media only screen and (max-width: 767px) {
-#news {
-    position: relative;
-    margin: 140px 0 100px;
-    background-color: #fff;
-    padding: 6%; 
-}
-#news .news__lineup{
-    display: block;
-    vertical-align: top;
-    width: auto;
-}
-#news .news__lineup .lineup__list{
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    margin-right: 0;
-    padding: 16px 0;
-}
-#news .news__lineup .lineup__list ul {
-    font-size: 0.8em;
-    height: 200px;
-    overflow: scroll;
-}
-#news .news__lineup .lineup__list .date {
-    display: inline-block;
-    width: 120px;
-}
-#news .news__lineup .lineup__list .detail {
-    width: calc(100% - 120px);
-}
-
-#news .news__facebook{
-    display: block;
-    vertical-align: top;
-    width: auto;
-}
-}
 
 /* ------------------------------------ */
 /* サービス案内ページ（SERVICE） */
@@ -1122,9 +1015,13 @@ footer {
     width: 50%;
     vertical-align: top;
 }
+.service__content ul .content__detail .detail__text h2{
+    margin: 0 0 0 0;
+    font-size: 28px;
+}
 .service__content ul .content__detail .detail__text h3{
     margin: 0 0 6% 0;
-    font-size: 28px;
+    font-size: 20px;
 }
 .service__content ul .content__detail .detail__text h3 span{
     margin-left: 2em;
@@ -1158,6 +1055,10 @@ footer {
     padding-bottom: 4%;
     line-height: 1.7;
 }
+.service__content ul .content__detail .detail__text h2{
+    font-size: 7vw;
+    vertical-align: top;
+}
 .service__content ul .content__detail .detail__img {
     display: block;
     width: 100%;
@@ -1188,7 +1089,7 @@ footer {
 /* text */
 /* ------------------------------------ */
 #main .main__copy .site-title {
-  font-size: 50px !important;
+  font-size: 50px;
   text-align: center;
   font-weight: 600;
   color: #110f74;  
@@ -1230,19 +1131,26 @@ footer {
 /* ------------------------------------ */
 .about__txt {
     background: rgba(255, 255, 255, 0.8); 
-    padding: 0vw 2vw;      
+    padding: 40px 0vw 2vw;      
     margin: 5vw auto;     
     width: 65%;            
     border-radius: 12px;  
     box-shadow: 0 0 20px rgba(0,0,0,0.05); 
     text-align: center;
+    line-height: 2.2;
 }
+.about__txt strong {
+    font-weight: 900; 
+    font-size: 18px;
+}
+
+
 .about__txt p {
     font-weight: 700; 
     font-size: 1.0em; 
-    line-height: 2.8;    
+    line-height: 1.0;    
     color: #333;      
-    margin: 0 0 0 0;  
+    margin: 20px 0 0 0;  
     text-align: center; 
 }
 .about__txt .list-block {
@@ -1250,6 +1158,18 @@ footer {
     color: #333;
     display: inline-block; 
     text-align: left; 
+}
+/* 箇条書きだけ左寄せ */
+.about__txt ul {
+    text-align: left;        /* 左寄せにする */
+    display: inline-block;   /* 中央位置に左寄せの箱を置く */
+    margin: 0 auto;
+    padding-left: 1.2em;     /* ・ が綺麗に見えるよう調整 */
+}
+
+.about__txt ul li {
+    margin-bottom: 0.6em;    /* 適度なスペース */
+    font-weight: 500;        /* 読みやすい太さ */
 }
 
 /* ------------------------------------ */
@@ -1269,9 +1189,321 @@ footer {
 .contact-top {
     margin-top: 100px;
 }
+/* ------------------------------------ */
+/* スマホ用
+/* ------------------------------------ */
+
+@media only screen and (max-width: 767px) {
+    .main_bg{
+        position: fixed;
+        background-image: url(img/main_bg4.png);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        z-index: -999;
+        transition: 0.3s;
+    }
+    .main_bg_sub{
+        position: fixed;
+        background-image: url(img/main_bg4.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+        z-index: -999;
+        transition: 0.3s;
+    }
+}
+
+
+/* ------------------------------------ */
+/* ヘッダー
+/* ------------------------------------ */
+
+@media only screen and (max-width: 767px) {
+    header {
+        padding: 12px 16px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header__logo {
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        z-index: 10;
+    }
+    .header__logo a.logo__img {
+        position: static !important;
+        width: 28vw;
+        max-width: 100px;
+        display: block;
+        margin: 0;
+    }
+    .header__logo a.logo__img img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    /* ハンバーガーメニューの位置調整 */
+    .hamburger-menu-wrapper {
+        margin: 0;
+        padding: 8px;
+        right: 16px;
+        top: 8px;
+        transform: scale(0.9);
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .wrapper #main {
+        height: auto;      /* ← 可変にしたいならこれ */
+        min-height: 80vh;  /* ← 固定高さをつけたいなら */
+    }
+    .main__copy {
+        position: relative !important;
+        height: auto !important;
+        top: 0 !important;
+        padding-top: 300px;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        text-align: center;
+    }
+    .wrapper #main .main__copy h1 {
+        font-size: 10vw;
+        margin: 0;
+    }
+    .wrapper #main .main__copy p {
+        font-size: 4.1vw;
+        letter-spacing: 0.2em;
+        margin: 0;
+    }
+        /* メイン見出し h1 */
+    .main__copy .site-title {
+        font-size: 7vw !important;
+        font-weight: 600;
+        margin: 0 0 3vw 0;
+        line-height: 1.3;
+        letter-spacing: 0.05em;
+    }
+
+    /* 2行目の「未来を創る。」 */
+    .site-title__second {
+        display: inline-block;
+        margin-left: 0;
+        font-size: 7vw !important;
+        line-height: 1.3;
+    }
+
+    /* サブテキスト（株式会社 Visionary Compaths） */
+    .main__copy p {
+        font-size: 3.6vw;
+        letter-spacing: 0.2em;
+        margin-top: 3vw;
+        margin-bottom: 0;
+    }
+}
 
 @media only screen and (max-width: 767px) {
     .contact-top {
         margin-top: 55px;
     }
+
+    /* ABOUTセクション内の「会社概要」ボタン（SP用） */
+    .about__txt {
+        background: rgba(255, 255, 255, 0.8); 
+        padding: 0vw 2vw;      
+        margin: 5vw auto;     
+        width: 90%;            
+        border-radius: 12px;  
+        box-shadow: 0 0 20px rgba(0,0,0,0.05); 
+        text-align: center;
+    }   
+    .about__txt p {
+        font-size: 3.5vw; 
+        line-height: 2.3;    
+        color: #333;      
+        margin: 0 0 0 0;  
+        text-align: center;
+    }  
+    .about__txt .list-block {
+        font-weight: 700; 
+        font-size: 3.5vw; 
+        color: #333;
+        display: inline-block; 
+        text-align: left; 
+    }
+    .about__detail .viewmore-btn {
+        padding: 6px 20px;   /* ボタンの大きさ */
+        font-size: 20px;     /* 文字サイズ */
+        border-radius: 20px;
+    }
+
+    .about__detail .viewmore-btn__label {
+        font-size: 20px;     /* 念のためラベルにも指定 */
+    }
+
+    /* ヒーロー部に .top-btn を使っている場合はこちらも一緒に調整 */
+    .top-btn {
+        padding: 15px 60px;
+        font-size: 14px;
+        margin-left: 0;
+    }
+    .top-text {
+        margin-left: -10px;      /* アイコンとの距離調整 */
+        font-size: 14px;
+    }
+
+    .arrow-circle {
+        width: 28px;             /* アイコン部分も小さく */
+        height: 16px;
+    }
+
+    .arrow-line {
+        width: 18px;             /* 横線も小さく */
+    }
+
+    .arrow-line::after {
+        width: 5px;
+        height: 5px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .about__detail p {
+        font-size: 4.3vw;
+        font-weight: bold;
+        line-height: 2.3;
+        padding: 3vw;
+        margin: -2% 0;
+    }
+    .about__copy p {
+        font-size: 11vw;
+        font-weight: bold;
+        margin-bottom: 1em;
+    }
+    .about__copy h2 {
+        font-size: 4vw;
+        color: #02123a !important;
+        font-weight: 700 !important;
+    }
+    .detail__text h3 {
+        font-size: 6vw !important;
+        font-weight: 700 !important;
+    }
+    .about-text {
+        font-size: 4vw;
+        font-weight: 700 !important;
+    }
+    /* 画像 */
+  .service__content ul .content__detail .detail__img {
+      display: block;
+      width: 100%;
+      padding-top: 0;      /* 必要なら 0 に */
+  }
+
+  .service__content ul .content__detail .detail__img img {
+      display: block;
+      width: 100%;         /* 画面幅いっぱいに */
+      height: auto;        /* 縦横比を維持 */
+      margin: 0 auto;      /* 中央寄せ */
+      border: 3px solid #d0d0d0;
+      box-sizing: border-box;  /* ボーダー込みで100%にする */
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+    #news {
+        position: relative;
+        margin: 140px 0 100px;
+        background-color: #fff;
+        padding: 6%; 
+    }
+    #news .news__lineup{
+        display: block;
+        vertical-align: top;
+        width: auto;
+    }
+    #news .news__lineup .lineup__list{
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        margin-right: 0;
+        padding: 16px 0;
+    }
+    #news .news__lineup .lineup__list ul {
+        font-size: 0.8em;
+        height: 200px;
+        overflow: scroll;
+    }
+    #news .news__lineup .lineup__list .date {
+        display: inline-block;
+        width: 120px;
+    }
+    #news .news__lineup .lineup__list .detail {
+        width: calc(100% - 120px);
+    }
+
+    #news .news__facebook{
+        display: block;
+        vertical-align: top;
+        width: auto;
+    }
+}
+/* ============================
+   SP版 TOP ボタン 完全修正版
+   ============================ */
+@media only screen and (max-width: 767px) {
+
+  .btn_back,
+  .btn__back {
+      width: 100% !important;
+      display: flex !important;
+      justify-content: center !important;
+      margin-top: 24px !important;
+  }
+
+  .top-btn {
+      all: unset !important;      /* ← PC版のスタイルを全消し */
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 6px !important;
+
+      padding: 10px 35px !important;
+      font-size: 14px !important;
+      border-radius: 24px !important;
+
+      background: linear-gradient(180deg, #9de2e8 0%, #6bbcc9 100%) !important;
+      color: #0d3b78 !important;
+      text-decoration: none !important;
+      font-weight: 600 !important;
+  }
+
+  .top-text {
+      margin: 0 !important;
+      font-size: 14px !important;
+  }
+
+  .arrow-circle {
+      width: 15px !important;
+      height: 20px !important;
+  }
+
+  .arrow-line {
+      width: 14px !important;
+      left: -6px !important;
+  }
+
+  .arrow-line::after {
+      width: 6px !important;
+      height: 6px !important;
+  }
+
 }
