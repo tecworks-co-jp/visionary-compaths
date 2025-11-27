@@ -1257,7 +1257,7 @@ footer {
     /* ハンバーガーメニューの位置調整 */
     .hamburger-menu-wrapper {
         margin: 0;
-        padding: 8px;
+        padding: 4px;
         right: 16px;
         top: 8px;
         transform: scale(0.9);
