@@ -1131,17 +1131,22 @@ footer {
 /* ------------------------------------ */
 .about__txt {
     background: rgba(255, 255, 255, 0.8); 
-    padding: 40px 0vw 2vw;      
+    padding: 15px;
     margin: 5vw auto;     
     width: 65%;            
     border-radius: 12px;  
     box-shadow: 0 0 20px rgba(0,0,0,0.05); 
     text-align: center;
     line-height: 2.2;
+    min-height: 50vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 .about__txt strong {
     font-weight: 900; 
-    font-size: 18px;
+    font-size: 25px;
 }
 
 
@@ -1323,6 +1328,12 @@ footer {
         border-radius: 12px;  
         box-shadow: 0 0 20px rgba(0,0,0,0.05); 
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 50vh;   /* ←中央寄せに必要 */
+        padding: 20px;      /* 上下にも余白 */
     }   
     .about__txt p {
         font-size: 3.5vw; 
